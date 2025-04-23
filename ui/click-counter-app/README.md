@@ -4,7 +4,7 @@
 
 Before starting, make sure you have the following tools installed:
 
-- **Node.js**: Version 16 or higher. You can check your version by running:
+- **Node.js**: Version 16 or higher (Angular CLI expects a Node.js LTS version). You can check your version by running:
 ```bash
 node -v
  ```
@@ -12,6 +12,11 @@ node -v
 - Yarn: A package manager used for this project. Install it globally by running:
 ```bash
 npm install -g yarn
+```
+
+- Angular CLI: Required to run the Angular app using ng serve. Install it globally with:
+```bash
+npm install -g @angular/cli
 ```
 
 ## UI installation
@@ -24,16 +29,22 @@ git clone <repository_url>
 cd click-counter-app
 ```
 
-2.Install dependencies: Once you're in the project directory, run the following command to install all the required dependencies:
+2. Install dependencies: Once you're in the project directory, run the following command to install all the required dependencies:
 ```bash
 yarn install
 ```
 
-3.Running the Application
+3. Install Angular app dependencies: Navigate to the Angular project directory, then install dependencies using:
+```bash
+cd ui/click-counter-app
+npm install
+```
+
+4. Running the Application
 
 After the installation is complete, you can run the Angular application using the following steps:
 
-Start the development server: To start the app in development mode, navigate to angular-app directory and run:
+Start the development server: To start the app in development mode, navigate to angular app directory and run:
 ```bash
 ng serve
 ```
