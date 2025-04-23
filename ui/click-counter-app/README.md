@@ -1,59 +1,63 @@
-# ClickCounterApp
+# Click Counter Angular Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+## Prerequisites
 
-## Development server
+Before starting, make sure you have the following tools installed:
 
-To start a local development server, run:
+- **Node.js**: Version 16 or higher. You can check your version by running:
+```bash
+node -v
+ ```
 
+- Yarn: A package manager used for this project. Install it globally by running:
+```bash
+npm install -g yarn
+```
+
+## UI installation
+
+Follow these steps to install and run the application:
+
+1. Clone the repository: Clone the project repository to your local machine:
+```bash
+git clone <repository_url>
+cd click-counter-app
+```
+
+2.Install dependencies: Once you're in the project directory, run the following command to install all the required dependencies:
+```bash
+yarn install
+```
+
+3.Running the Application
+
+After the installation is complete, you can run the Angular application using the following steps:
+
+Start the development server: To start the app in development mode, navigate to angular-app directory and run:
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+This will compile the application and serve it locally. By default, the app will be available at:
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open the application in your browser: Once the server is running, open your browser and go to http://localhost:4200. 
+You should see the "Click Counter" UI with a button that increments the count on each click.
 
+## Running Tests
+To run tests on your application, make sure the app is running locally. Then you can execute the tests:
+
+- On Linux/macOS:
+Set the PAGE_URL environment variable: Run the following command (replacing http://localhost:4200 with the actual URL where the application is running):
 ```bash
-ng generate --help
+PAGE_URL="http://localhost:4200" yarn test
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
+- On Windows (Command Prompt):
+Set the PAGE_URL environment variable: Run the following command (replace http://localhost:4200 with the actual URL):
+```cmd
+setx PAGE_URL "http://localhost:4200"
+yarn test
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
